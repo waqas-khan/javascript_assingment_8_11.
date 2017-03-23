@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        var name1 = prompt("Name of item 1:");
+        var name2 = prompt("Name of item 2:");
+        var price1 = +prompt("Price of item 1:");
+        var price2 = +prompt("Price of item 2:");
+        var quan1 = +prompt("Ordered quantity of item 1:");
+        var quan2 = +prompt("Ordered quantity of item 1:");
+        var shipCharges = +prompt("Shipping charges:");
+        var totalCost = (price1*quan1) + (price2*quan2) + shipCharges;
+        if(totalCost >= 2000){
+            var totalCost1 = totalCost - ((totalCost*10)/100);
+        }
+        document.write("<h1>Shopping Cart</h1>");
+        document.write("<br>Price of " + name1 + " is " + price1);
+        document.write("<br>Quantity of " + name1 + " is " + quan1);
+        document.write("<br>Price of " + name2 + " is "+ price2);
+        document.write("<br>Quantity of " + name2 + " is " + quan2);
+        document.write("<br>Shipping charges: " + shipCharges);
+        document.write("<br>Total Cost of Your Order is " + totalCost + "Pkr");
+        document.write("<br>Discounted price is " +  totalCost1 + "Pkr");
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
